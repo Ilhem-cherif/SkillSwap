@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: skillswap-postgres-user
+    environment:
+      POSTGRES_USER: skillswap
+      POSTGRES_PASSWORD: skillswap
+      POSTGRES_DB: userdb
+    ports:
+      - "5435:5432"
+    volumes:
+      - pgdata_user:/var/lib/postgresql/data
+  # --- Skill Service DB ---
+  postgres-skill:
+    image: postgres:15
+    container_name: skillswap-postgres-skill
+    environment:
+      POSTGRES_USER: skillswap
+      POSTGRES_PASSWORD: skillswap
+      POSTGRES_DB: skilldb
+    ports:
+      - "5436:5432"
+    volumes:
+      - pgdata_skill:/var/lib/postgresql/data
+volumes:
+  pgdata_user:
+  pgdata_skill:
