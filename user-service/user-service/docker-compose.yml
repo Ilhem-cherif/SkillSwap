@@ -23,6 +23,19 @@ services:
       - "5436:5432"
     volumes:
       - pgdata_skill:/var/lib/postgresql/data
+  # --- Credits Service DB ---
+  postgres-credits:
+    image: postgres:15
+    container_name: skillswap-postgres-credits
+    environment:
+      POSTGRES_USER: skillswap
+      POSTGRES_PASSWORD: skillswap
+      POSTGRES_DB: creditsdb
+    ports:
+      - "5437:5432"
+    volumes:
+      - pgdata_credits:/var/lib/postgresql/data
 volumes:
   pgdata_user:
   pgdata_skill:
+  pgdata_credits:
