@@ -35,7 +35,20 @@ services:
       - "5437:5432"
     volumes:
       - pgdata_credits:/var/lib/postgresql/data
+  # --- Exchange Service DB ---
+  postgres-exchange:
+    image: postgres:15
+    container_name: skillswap-postgres-exchange
+    environment:
+      POSTGRES_USER: skillswap
+      POSTGRES_PASSWORD: skillswap
+      POSTGRES_DB: exchangedb
+    ports:
+      - "5438:5432"
+    volumes:
+      - pgdata_exchange:/var/lib/postgresql/data
 volumes:
   pgdata_user:
   pgdata_skill:
   pgdata_credits:
+  pgdata_exchange:
