@@ -125,6 +125,6 @@ docker-compose up -d
 3. Check Eureka: http://localhost:8761
 4. Access APIs only through Gateway: http://localhost:8080
 # 👨‍💻 Author
-Developed by: [Ilhem Cherif]
-Role: Full Stack Engineer
-Focus: Microservices, Spring Boot, Cloud Architecture
+- Developed by: [Ilhem Cherif]
+- Role: Full Stack Engineer
+- Focus: Microservices, Spring Boot, Cloud Architecture
