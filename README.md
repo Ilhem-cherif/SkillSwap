@@ -27,7 +27,7 @@ The project follows a **distributed microservices architecture**:
 - **User Service** – Authentication, registration, user profiles
 - **Skill Service** – User skills management
 - **Credits Service** – Wallet & credit management
-- **(Upcoming)** Exchange Service – Skill exchange & requests
+- **Exchange Service** Exchange Service – Skill exchange & requests
 - **(Upcoming)** Review & Rating Service
 - **(Upcoming)** Notification & Chat Services
 
