@@ -27,9 +27,9 @@ The project follows a **distributed microservices architecture**:
 - **User Service** – Authentication, registration, user profiles
 - **Skill Service** – User skills management
 - **Credits Service** – Wallet & credit management
-- **Exchange Service** Exchange Service – Skill exchange & requests
-- **(Upcoming)** Review & Rating Service
-- **(Upcoming)** Notification & Chat Services
+- **Exchange Service** – Exchange Service – Skill exchange & requests
+- **(Upcoming)** – Review & Rating Service
+- **(Upcoming)** – Notification & Chat Services
 
 All services communicate through REST APIs and are registered with Eureka.
 
@@ -125,6 +125,6 @@ docker-compose up -d
 3. Check Eureka: http://localhost:8761
 4. Access APIs only through Gateway: http://localhost:8080
 # 👨‍💻 Author
-- Developed by: [Ilhem Cherif]
+- Developed by: Ilhem Cherif
 - Role: Full Stack Engineer
 - Focus: Microservices, Spring Boot, Cloud Architecture
